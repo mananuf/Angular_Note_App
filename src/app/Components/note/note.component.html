@@ -11,7 +11,10 @@
 
   <div class="container flex justify-center mx-auto p-3 my-7 max-w-md">
     <ul class="w-full divide-y divide-gray-200 dark:divide-gray-700">
-      <li class="py-3 sm:pb-4 shadow-lg shadow-blue-100 px-5">
+      <li
+        *ngFor="let note of notes"
+        class="py-3 sm:pb-4 shadow-lg shadow-blue-100 px-5"
+      >
         <div class="flex items-center space-x-4">
           <div class="flex-shrink-0">
             <svg
@@ -29,13 +32,13 @@
               />
             </svg>
           </div>
-          <div class="flex-1">
+          <a class="flex-1" href="">
             <p
-              class="text-lg font-medium text-gray-900 truncate dark:text-white"
+              class="text-lg text-clip overflow-hidden font-medium text-gray-900 truncate dark:text-white"
             >
-              Neil Sims
+              {{ note.title }}
             </p>
-          </div>
+          </a>
           <div
             class="inline-flex items-center text-2xl cursor-pointer font-semibold text-red-600 dark:text-white"
           >
