@@ -16,7 +16,7 @@ export class NoteComponent implements OnInit {
     this.get()
   }
 
-  // get notes from server
+  // get notes from server through NoteService
   get():void{
     this.noteService.getNotes().subscribe(data => this.notes = data)
   }
