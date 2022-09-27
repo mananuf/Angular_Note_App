@@ -351,6 +351,8 @@ module.exports = {
       DEFAULT: "1",
     },
     fontFamily: {
+      roboto: ["Roboto"],
+      poppins: ["Poppins"],
       sans: [
         "ui-sans-serif",
         "system-ui",
