@@ -7,6 +7,7 @@ import { NoteComponent } from './Components/note/note.component';
 import { SearchComponent } from './Components/search/search.component';
 import { NoteItemComponent } from './Components/note-item/note-item.component';
 import { MessagesComponent } from './Components/messages/messages.component';
+import { SingleNoteViewComponent } from './Components/single-note-view/single-note-view.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MessagesComponent } from './Components/messages/messages.component';
     NoteComponent,
     SearchComponent,
     NoteItemComponent,
-    MessagesComponent
+    MessagesComponent,
+    SingleNoteViewComponent
   ],
   imports: [
     BrowserModule,
