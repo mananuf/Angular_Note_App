@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NoteComponent } from './Components/note/note.component';
 import { SearchComponent } from './Components/search/search.component';
 import { NoteItemComponent } from './Components/note-item/note-item.component';
+import { MessagesComponent } from './Components/messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NoteComponent,
     SearchComponent,
-    NoteItemComponent
+    NoteItemComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
